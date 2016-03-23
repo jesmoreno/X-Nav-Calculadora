@@ -1,0 +1,124 @@
+
+@keyframes mymove {
+	from {left: 35%;}
+    to {left: 0%;}
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+#run{position: absolute;right: 15%;top:225px;font-size: 300%;}
+
+#stop{position: absolute;right: 20%;top:325px;font-size: 300%;}
+
+#cover img{	position :relative;
+			left:35%;
+			top:20%;
+			}
+
+#result	{ 	animation-name: parpadeo;
+  			animation-duration: 1s;
+  			animation-timing-function: linear;
+  			animation-iteration-count: infinite;
+  		}
+
+#cover {	height: 500px;
+			width: 350px;
+			background-color: #6E6E6E;
+			border-radius: 25px 25px 25px 25px;
+			-webkit-border-radius: 25px 25px 25px 25px;
+			border: 0px solid #6E6E6E;
+    		animation: mymove 8s steps(100, end) infinite;	
+    		animation-play-state:paused;
+    	}
+
+#container {height: 500px;
+			width: 350px;
+			background-color: #6E6E6E;
+			border-radius: 25px 25px 25px 25px;
+			-webkit-border-radius: 25px 25px 25px 25px;
+			border: 0px solid #6E6E6E;
+			}
+
+
+#brand {height: 30px; 
+		width:100px;
+		padding-left:15px; 
+		padding-top:5px;
+		padding-bottom: 30px;
+		}
+
+#label {color:red;
+		font-family: sans-serif;
+  		font-style: italic;
+  		position: relative;
+  		left:20px;
+		}
+
+
+#display {  background-color: #81F781;
+			width: 250px;
+			height: 75px;
+			position:relative;
+			left: 50px;
+			border-top-color: #2E2E2E;
+			border-bottom-color: #2E2E2E;
+			border-width: 5px;
+			border-style:solid;
+			font-size: 300%;
+			text-align: right;
+		}
+
+.button {	background-color:#A4A4A4;
+			color:black;
+			width: 60px;
+			height: 60px;
+			font-size: 300%;
+			margin-right: 5px;
+			margin-top: 5px;
+			border: 1px solid black; 
+			display:block;
+			float:left;
+			text-align: center;
+			border-radius: 5px 5px 5px 5px;
+			-webkit-border-radius: 5px 5px 5px 5px;
+		}
+
+#allButtons	{	position: relative;
+				top:40px;
+				left:10px;
+			}
+
+#delete	{
+			position:absolute;
+			color:black;
+			top:210px;
+			left:134px;
+			background-color: red;
+			width: 60px;
+			height: 60px;
+			font-size: 300%;
+			border-radius: 5px 5px 5px 5px;
+			-webkit-border-radius: 5px 5px 5px 5px;
+			border: 1px solid black; 
+			text-align: center;
+		}
+
+#reset 	{	position:absolute;
+			color:black;
+			top:210px;
+			left:224px;
+			width: 60px;
+			height: 60px;
+			background-color: green;
+			border: 1px solid black;
+			border-radius: 5px 5px 5px 5px;
+			-webkit-border-radius: 5px 5px 5px 5px;
+		}
+
+body #cover,#container{	position: absolute;
+		left:35%;
+	}

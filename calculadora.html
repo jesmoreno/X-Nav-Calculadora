@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora html5</title>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" type="text/css" href="css/calc.css" title="style" />
+</head>
+<body background="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWcFYdkDkcgseDNka0rFK8pEA2-QxiJJTxP9cKX8jEHcqVyuQ1">
+
+<button id="run" onclick="animationON()">Mover tapa</button><button id="stop" onclick="animationOFF()">Parar</button>
+
+<div id="container">
+
+	<img src="http://logodatabases.com/wp-content/uploads/2012/03/casio.jpg" id="brand">
+	<span id="label">S-V.P.A.M.</span>
+	<div id="display"><span id="result">0</span></div>
+
+	<div id="allButtons">
+		<button class="button">7</button><button class="button">8</button><button class="button">9</button><button class="button">+</button><button class="button">-</button>
+		<button class="button">4</button><button class="button">5</button><button class="button">6</button><button class="button" >*</button><button class="button">/</button>
+		<button class="button">1</button><button class="button">2</button><button class="button">3</button><button class="button">0</button><button class="button">=</button>
+		<button id="delete">C</button>
+		<button id="reset">RESET</button>
+	</div>
+</div>
+
+<div id="cover">
+	<img src="https://msxresources.files.wordpress.com/2011/11/casio_logo.jpg" id="brand">
+</div>
+
+<script src="javascript/operations.js"></script>
+
+</body>
+</html> 
